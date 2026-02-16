@@ -1,0 +1,26 @@
+# Preprocessing configuration
+# ============================
+
+# Band-pass filter
+bandpass_low: 0.5
+bandpass_high: 50.0
+notch_freq: 50.0        # Set to null to skip (use 60.0 for US power-line)
+filter_order: 5
+
+# ICA artifact removal
+ica_n_components: 15
+ica_method: "fastica"    # Options: fastica, infomax, picard
+ica_eog_threshold: 0.4
+
+# Epoch extraction
+epoch_duration: 1.0      # seconds
+epoch_overlap: 0.0       # seconds (0 = non-overlapping)
+
+# Normalisation
+normalise: true          # z-score per channel
+
+# Dataset-specific sampling rates
+deap_sampling_rate: 128.0
+seed_sampling_rate: 200.0
+deap_n_channels: 32
+seed_n_channels: 62

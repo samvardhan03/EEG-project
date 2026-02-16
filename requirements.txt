@@ -1,0 +1,58 @@
+# ============================================================
+# EEG-Based Emotion Recognition — Dependencies
+# ============================================================
+
+# ---------- EEG / Neuroscience ----------
+mne>=1.6
+pyedflib
+
+# ---------- Signal Processing ----------
+scipy>=1.11
+PyWavelets>=1.4
+
+# ---------- Deep Learning ----------
+torch>=2.1
+torchvision>=0.16
+torchaudio>=2.1
+
+# ---------- Graph Neural Networks ----------
+torch-geometric>=2.4
+
+# ---------- Classical ML ----------
+scikit-learn>=1.3
+xgboost>=2.0
+
+# ---------- Data ----------
+numpy>=1.24
+pandas>=2.1
+h5py>=3.9
+
+# ---------- Visualization ----------
+matplotlib>=3.8
+seaborn>=0.13
+plotly>=5.18
+
+# ---------- Notebooks ----------
+jupyter>=1.0
+ipywidgets>=8.1
+nbformat>=5.9
+
+# ---------- Logging & Tracking ----------
+wandb>=0.16
+tqdm>=4.66
+
+# ---------- Configuration ----------
+pyyaml>=6.0
+omegaconf>=2.3
+
+# ---------- Testing ----------
+pytest>=7.4
+pytest-cov>=4.1
+
+# ---------- Web / Real-Time (Phase 7) ----------
+fastapi>=0.104
+uvicorn>=0.24
+websockets>=12.0
+
+# ---------- Utilities ----------
+rich>=13.7
